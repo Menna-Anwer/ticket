@@ -1,0 +1,169 @@
+.card-body{
+    padding: 7px !important;
+    .table{
+        display: inline-block;
+        direction: rtl;
+        overflow-x: auto;
+        max-width: 100%;
+        width: 100%;
+        .trunk-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 120px;
+            display: block;
+          }
+        .CellWithComment{
+           position:relative;
+           .CellComment{
+            display:none;
+            position:absolute; 
+            z-index:100;
+            border:1px;
+            border-radius: 8px;
+            // width: 40.494px;
+            // height: 148px;
+            background-color:#1c1c28;
+            padding:3px;
+            color:white; 
+            top: -24px;
+            left: 0px;
+            padding: 10px;
+           }
+           &:hover .CellComment{
+            display:block;
+          }
+        }
+          
+        
+        thead{
+            th{
+                height: 35px;
+                font-size: 9.279px;
+                color: #ABAAB1;
+                font-family: 'Tajawal', sans-serif;
+                font-style: normal;
+                background:#f8f8f9;
+                text-align: center;
+            }
+            .th1{
+                border-radius: 0px 6px 6px 0px;
+            }  
+            .th2{
+                border-radius: 6px 0px 0px 6px;
+            } 
+        }
+        tbody{
+            td{
+                text-align: center;
+            }
+        }
+        .user-container{
+            display:flex;
+            justify-content: space-evenly;
+            height: 36px;
+            width: 125px;
+            .user-name{
+                color: #1C1C28;
+                font-family: 'Tajawal', sans-serif;
+                font-size: 11.619px;
+                font-style: normal;
+                font-weight: 400;
+                margin: 0;
+            }
+            .user-number{
+                color: #92A1AD;
+                font-family: Poppins;
+                font-size: 10.959px;
+                font-style: normal;
+                font-weight: 400;
+            }
+         
+        }
+        .ticket{
+            display: flex !important;   
+            justify-content: space-around; 
+            width: 165px !important;
+            margin-right: auto;
+            .ticket-icon{
+            border-radius: 7.917px;
+            background-color: #f4f2ff;
+            width: 31.667px;
+            height: 31.667px;
+            padding-top: 8px;
+                .ticket-svg{
+                    display: flex;
+                    margin: auto;
+                }
+            }
+            .ticket-font{
+             height: 33px;
+                .ticket-font-lg{
+                    font-family: 'Tajawal', sans-serif;
+                    font-size: 11.667px;
+                    font-style: normal;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+                .ticket-font-sm{
+                    color: rgba(0, 0, 0, 0.40);
+                    font-size: 10px;
+                    text-align: start !important;
+                }
+            }
+            
+        }
+    }
+    .pagination-container{
+        direction: rtl;
+        .pagination{
+            display: flex;
+            align-items: baseline;
+            font-size: 12.5px;
+            font-style: normal;
+            font-weight: 500;
+            button{
+                height: 31.5px;
+                padding: 6px 11.25px;
+                border-radius: 6px;
+                border: 0.75px solid #DDD;
+                background: #FFF;
+                font-size: 10.5px;
+
+            }
+
+        }
+        .btn{
+            // display: flex;
+          
+            border: 0;
+            color:#7e8299;
+            &:hover{
+                background: #8a74f9;
+                color:white;
+            }
+        }
+        .arrow-btn{
+            background: 0;
+            border: 0;
+            &:hover{
+                color:#8a74f9;
+            }
+        }
+        
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .table {
+        display: inline-table !important;
+        width:1272px !important;
+        thead{
+            th{
+            height: 35px !important;
+            font-size: 13.279px !important;
+            }
+        }
+    }
+}    

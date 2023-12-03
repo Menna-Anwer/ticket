@@ -1,0 +1,25 @@
+.header-card{
+    display: flex;
+    justify-content: space-between;
+    h5{
+        font-family:'Tajawal', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .btn-card{
+        width: 67.371px;
+        height: 30.279px;
+        border: 1px solid #e8e8e8;
+        background: #fafafa;
+        border-radius: 8px;
+        .font{
+            color: #1C1C28;
+            font-family:'Tajawal', sans-serif;
+            font-size: 13.112px;
+            font-style: normal;
+            font-weight: 500;
+            padding: 4px;
+        }
+    }
+}
